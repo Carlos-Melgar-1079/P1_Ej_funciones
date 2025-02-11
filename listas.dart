@@ -18,4 +18,5 @@ void main() {
     print('Estatura: ${estaturas[i]}');
     print('Nombre: ${nombres[i]}');
   }
+  
 }
