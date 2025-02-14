@@ -12,19 +12,16 @@ void main() {
     9: 'Septiembre',
     10: 'Octubre',
     11: 'Noviembre',
-    12: 'Diciembre'
+    12: 'Diciembre',
   };
 
-  // Ejemplo de cómo acceder a un valor
- 
+  // Acceder a los valores del Map
+  print('El mes 1 es: ${meses[1]}');  // Output: El mes 1 es: Enero
+  print('El mes 12 es: ${meses[12]}'); // Output: El mes 12 es: Diciembre
 
-print ("meses del año": $mesesDelAnio);
-int numeroMes = 5;
-String nombreMes = mesesDelAnio[numeroMes];    
-print("\nEl mes numero $numeroMes es $nombreMes"); 
-
-print("\nLista de meses");
-mesesDelAnio.fortach((numero y nombre){
-print("$nombre");
-})
+  // Recorrer el Map e imprimir todos los meses
+  print('\nTodos los meses:');
+  meses.forEach((key, value) {
+    print('Mes $key: $value');
+  });
 }
